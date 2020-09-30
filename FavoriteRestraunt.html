@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Favorite Restraunts
+    </title>
+</head>
+
+<!-- didnt learn this but wanted to clean up my webpage a little -->
+<style>
+   
+    h1 {
+        text-align: center;
+        color:white;
+        font-size:100px;
+        }
+    p{
+        text-align:center;
+        color:white;
+        font-size:40px;
+    }
+    a{
+        color:white;
+    }
+    li{
+        text-align:center;
+        font-size:30px;
+    }
+    img{
+        text-align: justify;
+    }
+    form{
+        text-align:center;
+    }
+    label{
+        color:white;
+    }
+</style>
+
+<!-- Adding a background to the main body -->
+<body background="/images/RamenShop.jpg">
+
+    <H1>Tims Favorite Restraunts</H1>
+    <!-- easy challeng in p -->
+    <p>This website is dedicated to my <b class="keyword">TOP 5</b> favorite restraunts</p>
+
+    <ul>
+        <!-- firts restraunt -->
+        <li>
+            <img src="/images/SushiPirate.jpg" alt=" TTS">
+            <div>
+                <a href="https://www.sushipiratemenu.com/north_aurora/menu.html" target="_blank">Sushi Pirate</a>
+            </div>
+        </li>
+
+        <!-- second restraunt -->
+        <li>
+            <img src="/images/PapaGs.jpg" width="300">
+            <div>
+                <a href="https://www.papagsaurora.com/" target="_blank">Papa Gs</a>
+            </div>
+        </li>
+
+        <!-- third restraunt -->
+        <li>
+            <img src="/images/Chipolte.jpg" width="300">
+            <div>
+                <a href="https://www.chipotle.com/" target="_blank">Chipolte</a>
+            </div>
+        </li>
+
+        <!-- forth restraunt -->
+        <li>
+            <img src="/images/Yamado.jpg" width="300">
+            <div>
+                <a href="http://www.napervilleyamado.com/" target="_blank">Yamado</a>
+            </div>
+        </li>
+
+        <!-- fith restraunt -->
+        <li> 
+            <img src="/images/MyKitchen.jpg" width="300">
+            <div>
+                <a href="my_kitchen.html">My Kitcken</a>
+            </div>
+        </li>
+    </ul>
+
+    <div id="after_submit"></div>
+
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+
+        <div class="row">
+            <label class="required" for="name">Your name:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+            <span id="name_validation" class="error_message"></span>
+        </div>
+
+        <div class="row">
+            <label class="required" for="email">Your email:</label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+            <span id="email_validation" class="error_message"></span>
+        </div>
+
+        <div class="row">
+            <label class="required" for="message">Your message:</label><br />
+            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+        </div>
+    
+        <input id="submit_button" type="submit" value="Send email" />
+
+    </form>
+
+</body>
+</html>
